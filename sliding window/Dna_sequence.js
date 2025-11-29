@@ -40,17 +40,19 @@
 // index:   6-15  → "CCCCAAAAAC"
 // everytime we move the magnifying glass, that is right indicator, we check wether the 10 sequence exist in ledger;
 
-// HOW MANY WINDOW WE HAVE IN THIS FIXED WINDOW;
-// IF DNA LENGTH IS n , we have : n-10+1;
+
 // now create ledger ;
 // loop from i to dna.length-10;
 // for each loop extract a substring;window= dna.substring(i,i+10);
 //add in ledger ; ledger[window]=(ledger[window]||0)+1;
 
+
+// HOW MANY WINDOW WE HAVE IN THIS FIXED WINDOW;
+// IF DNA LENGTH IS n , we have : n-10+1;
 function dnaSequence(dna,k){
     // we dont require left of window to move, because window is fixed ,we dont need shrinking;
     let ledger={};
-    for(let right =0; right<dna.length-k;right++){
+    for(let right =0; right<dna.length-k+1;right++){
         // now creating a substring of dna;
         const subDna = dna.substring(right,right+k);
         // than wrting in ledger all sequnce of dna;
