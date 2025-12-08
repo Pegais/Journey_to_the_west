@@ -22,5 +22,5 @@ function reverseString(str){
     return newStr;
 }
 
-const result =reverseString("abc");
+const result =reverseString("abcdea");
 console.log(result);
