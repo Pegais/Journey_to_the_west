@@ -20,18 +20,18 @@
  */
 
 
-function main(n){
-   //see for each row we have n-1 space and i star;
-   for(let i=1;i<=n;i++){
-   
-    
-     for(let space=1;space<=n-i;space++){
-        process.stdout.write(" ");
-     }
-     for(let star=1;star<=i;star++){
-        process.stdout.write("*")
-     }
-     console.log('')
-   }
+function main(n) {
+    //see for each row we have n-1 space and i star;
+    for (let i = 1; i <= n; i++) {
+
+
+        for (let space = 1; space <= n - i; space++) {
+            process.stdout.write(" ");
+        }
+        for (let star = 1; star <= i; star++) {
+            process.stdout.write("*")
+        }
+        console.log('')
+    }
 }
 main(5)
