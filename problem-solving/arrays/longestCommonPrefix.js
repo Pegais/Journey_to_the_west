@@ -42,6 +42,7 @@ var longestCommonPrefix = function (strs) {
     let refPointer = 0;
     const firstStr = strs[0];
     const lastStr = strs[strs.length - 1]
+    
     console.log(firstStr, lastStr);
 
     while (refPointer < firstStr.length && refPointer < lastStr.length) {
