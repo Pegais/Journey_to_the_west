@@ -28,8 +28,6 @@ var moveZeroes = function (nums) {
        if(nums[i]!==0){
         nums[current]=nums[i];
         current++;
-       }else{
-        zeroCount++;
        }
         
     }
