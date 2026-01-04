@@ -1,9 +1,5 @@
 // 1754. Largest Merge Of Two Strings
-// Medium
-// Topics
-// premium lock icon
-// Companies
-// Hint
+
 // You are given two strings word1 and word2. You want to construct a string merge in the following way: while either word1 or word2 are non-empty, choose one of the following options:
 
 // If word1 is non-empty, append the first character in word1 to merge and delete it from word1.
