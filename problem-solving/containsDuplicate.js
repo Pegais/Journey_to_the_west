@@ -36,27 +36,42 @@
 // -109 <= nums[i] <= 109
 
 
+// var containsDuplicate = function(nums) {
+//     let ledger ={};
+//     for (let num of nums){
+//         if(!ledger[num]){
+//             ledger[num]=1;
+//         }else{
+//             ledger[num]++;
+//         }
+//     }
+//   console.log(ledger);
+  
+//     for (let key in ledger){
+//         console.log(key);
+        
+//         if(ledger[key]>1){
+//             return true
+//         }
+//     }
+//     return false;
+// };
+
+// console.log(containsDuplicate( [1,1,1,3,3,4,3,2,4,2]))
+
+
+//Optmised way
 var containsDuplicate = function(nums) {
     let ledger ={};
     for (let num of nums){
         if(!ledger[num]){
             ledger[num]=1;
         }else{
-            ledger[num]++;
+            return true;
         }
     }
-  console.log(ledger);
-  
-    for (let key in ledger){
-        console.log(key);
-        
-        if(ledger[key]>1){
-            return true
-        }
-    }
+    
     return false;
 };
-
-// console.log(containsDuplicate([1,2,3,4]))
-// console.log(containsDuplicate( [1,1,1,3,3,4,3,2,4,2]))
-console.log(containsDuplicate([2,14,18,22,22]))
+// console.log(containsDuplicate([2,14,18,22,22]))
+console.log(containsDuplicate([1,2,3,4]))
